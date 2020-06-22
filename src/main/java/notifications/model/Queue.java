@@ -2,9 +2,9 @@ package notifications.model;
 
 public interface Queue {
 
- void push(QueueItem item);
+ void push(Message item);
  
- QueueItem pop();
+ Message pop();
  
  boolean isEmpty();
 }

@@ -2,20 +2,24 @@ package notifications.model;
 
 import java.util.Map;
 
-public class QueueItem {
+class DefaultMessage implements Message {
+
+ private static final long serialVersionUID = 1L;
 
  private int idListener;
  private Map<String, String> items;
  
- public QueueItem(int idListener, Map<String, String> items) {
+ public DefaultMessage(int idListener, Map<String, String> items) {
   this.idListener = idListener;
   this.items = items;
  }
  
- public int id() {
+ @Override
+ public int listenerId() {
   return idListener;
  }
  
+ @Override
  public String itemValue(String itemKey) {
   return this.items.get(itemKey);
  }

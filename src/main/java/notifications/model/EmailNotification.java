@@ -15,6 +15,6 @@ public class EmailNotification implements Notification {
  @Override
  public void send(int idListener) {
   // TODO: traer email de userprofile
-  queue.push(new QueueItem(idListener, Map.of("email", "e@bla.com")));
+  queue.push(new DefaultMessage(idListener, Map.of("email", "e@bla.com")));
  }
 }
