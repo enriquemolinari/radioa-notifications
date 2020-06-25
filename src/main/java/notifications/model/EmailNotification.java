@@ -7,7 +7,6 @@ import userprofile.model.api.RadioListeners;
 
 public class EmailNotification implements Notification {
 
- private static final String EMAIL = "email";
  private Queue queue;
  private RadioListeners listeners;
 
@@ -15,12 +14,15 @@ public class EmailNotification implements Notification {
   this.queue = queue;
   this.listeners = listeners;
  }
- 
+
  @Override
- public void send(int idListener) {
+ public void send(int idListener, String message) {
   var listener = listeners.listener(idListener);
-  var person = listener.orElseThrow(() -> new RuntimeException("idListener not found..."));
+  var person = listener
+    .orElseThrow(() -> new RuntimeException("idListener not found..."));
   System.out.println(person.email());
-  queue.push(new DefaultMessage(idListener, Map.of(EMAIL, person.email())));
+  queue
+    .push(new DefaultMessage(idListener, Map.of(DefaultMessage.EMAIL_ITEM,
+      person.email(), DefaultMessage.MSG_ITEM, message)));
  }
 }

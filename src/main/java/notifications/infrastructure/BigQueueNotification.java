@@ -1,4 +1,4 @@
-package notifications.persistence;
+package notifications.infrastructure;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

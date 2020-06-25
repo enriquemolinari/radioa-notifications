@@ -5,7 +5,9 @@ import java.util.Map;
 class DefaultMessage implements Message {
 
  private static final long serialVersionUID = 1L;
-
+ public static final String EMAIL_ITEM = "email";
+ public static final String MSG_ITEM = "message";
+ 
  private int idListener;
  private Map<String, String> items;
  
