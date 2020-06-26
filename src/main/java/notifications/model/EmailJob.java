@@ -13,6 +13,9 @@ public class EmailJob {
  public void sendThemAll() {
   while (!this.queue.isEmpty()) {
    Message m = this.queue.pop();
+   System.out.println(m.listenerId());
+   System.out.println(m.itemValue(DefaultMessage.EMAIL_ITEM));
+   System.out.println(m.itemValue(DefaultMessage.MSG_ITEM));
    provider.send(m.itemValue(DefaultMessage.EMAIL_ITEM), EMAIL_TITLE,
      m.itemValue(DefaultMessage.MSG_ITEM));
   }

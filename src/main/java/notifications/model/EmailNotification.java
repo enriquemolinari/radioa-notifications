@@ -20,7 +20,6 @@ public class EmailNotification implements Notification {
   var listener = listeners.listener(idListener);
   var person = listener
     .orElseThrow(() -> new RuntimeException("idListener not found..."));
-  System.out.println(person.email());
   queue
     .push(new DefaultMessage(idListener, Map.of(DefaultMessage.EMAIL_ITEM,
       person.email(), DefaultMessage.MSG_ITEM, message)));
