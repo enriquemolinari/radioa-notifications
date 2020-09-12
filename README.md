@@ -1,1 +1,3 @@
-# radioa-notifications
+# RadioA - Notifications Module
+
+This is the Notifications Java9+ Module of the RadioA sample application written as a demostration of the modular architecture for the book [An Introduction to Software Architecture](https://leanpub.com/introsoftwarearchitecture). See also the others three modules [Competitions Module](https://github.com/enriquemolinari/radioa-competition), [UserProfile Module](https://github.com/enriquemolinari/radioa-userprofile) and [Main Module](https://github.com/enriquemolinari/radioa-main). 
