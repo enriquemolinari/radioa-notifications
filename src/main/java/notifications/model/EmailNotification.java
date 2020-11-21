@@ -3,6 +3,7 @@ package notifications.model;
 import java.util.Map;
 
 import competition.model.api.Notification;
+import notifications.spi.Queue;
 import userprofile.model.api.RadioListeners;
 
 public class EmailNotification implements Notification {

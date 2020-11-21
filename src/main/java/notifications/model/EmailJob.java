@@ -1,5 +1,9 @@
 package notifications.model;
 
+import notifications.spi.EmailProvider;
+import notifications.spi.Message;
+import notifications.spi.Queue;
+
 public class EmailJob {
  private static final String EMAIL_TITLE = "RadioA Notification";
  private Queue queue;

@@ -1,4 +1,4 @@
-package notifications.model;
+package notifications.spi;
 
 public interface EmailProvider {
 

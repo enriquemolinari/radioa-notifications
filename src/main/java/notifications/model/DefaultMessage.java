@@ -2,6 +2,8 @@ package notifications.model;
 
 import java.util.Map;
 
+import notifications.spi.Message;
+
 class DefaultMessage implements Message {
 
  private static final long serialVersionUID = 1L;
