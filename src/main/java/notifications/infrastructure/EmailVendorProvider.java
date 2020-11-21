@@ -1,6 +1,6 @@
 package notifications.infrastructure;
 
-import notifications.spi.EmailProvider;
+import notifications.model.spi.EmailProvider;
 
 public class EmailVendorProvider implements EmailProvider {
 

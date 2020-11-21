@@ -1,4 +1,4 @@
-package notifications.spi;
+package notifications.model.spi;
 
 import java.io.Serializable;
 

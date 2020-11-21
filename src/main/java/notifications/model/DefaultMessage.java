@@ -2,7 +2,7 @@ package notifications.model;
 
 import java.util.Map;
 
-import notifications.spi.Message;
+import notifications.model.spi.Message;
 
 class DefaultMessage implements Message {
 

@@ -9,8 +9,8 @@ import java.io.ObjectOutputStream;
 import com.leansoft.bigqueue.BigQueueImpl;
 import com.leansoft.bigqueue.IBigQueue;
 
-import notifications.spi.Message;
-import notifications.spi.Queue;
+import notifications.model.spi.Message;
+import notifications.model.spi.Queue;
 
 public class BigQueueNotification implements Queue {
 
